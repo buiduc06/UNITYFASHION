@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>product detail</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/customcheckbox.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<header id="pc">
+		<div class="container">
+			<div class="top-menu">
+				<div>
+					<a href="#login"><i class="fa fa-user-circle" style="margin-right: 10px;"></i>Francisca</a>
+				 
+				</div>
+				<div class="site-logo">
+					<h1>UNITY</h1>
+					<p>FASHION</p>
+				</div>
+				<div class="button-cart">
+					<a href="#">
+						<div class="heart"> 
+							<p>13</p>
+						</div>
+					</a>
+					<a href="#">
+						<div class="cart"> 
+							<p>13</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="main-menu">
+			<div class="container">
+				<div><a href="#" title=""><i class="fa fa-search"></i></a></div>
+				<div>
+					<ul>
+						<li><a href="#men">men</a></li>
+						<li><a href="#women">women</a></li>
+						<li><a href="#bridal">bridal</a></li>
+						<li><a href="#Baby&Kids">Baby&Kids</a></li>
+					</ul>
+				</div>
+				<div class="social-button">
+					<a href=""><i class="fa fa-facebook"></i></a>
+					<a href=""><i class="fa fa-instagram"></i></a>
+					<a href=""><i class="fa fa-pinterest"></i></a>
+					<a href=""><i class="fa fa-twitter"></i></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<header id="mobile">
+		<div class="container">
+			<div class="top-menu">
+				<div class="site-logo">
+					<h1>UNITY</h1>
+					<p>FASHION</p>
+				</div>
+				<div class="button-cart">
+					<div class="button-cart">
+						<a href="#">
+							<div class="heart"> 
+								<p>300</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="cart"> 
+								<p>300</p>
+							</div>
+						</a>
+					</div>
+					<a href="#" title="">
+						<div class="button-togge">
+							<button class="fa fa-reorder show-menu"></button>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="modal-show" style="display: none;">
+			<div class="modal-content">
+				<div class="modal-search">
+					<input type="text" name="s" placeholder=" Search...">
+					<button class="fa fa-search"></button>
+				</div>
+				<div class="modal-category">
+					<div class="title-cate non-active">
+						<div>Category</div>
+						<div><i class="fa fa-plus"></i></div>
+					</div>
+					<div class="child-cate">
+						<a href="#"><li>men </li></a>
+						<a href="#"><li>women</li></a>
+						<a href="#"><li>bridal</li></a>
+						<a href="#"><li>Baby&Kids</li></a>
+
+					</div>
+					<div class="link-site">
+						<a href="#">Login</a>
+					</div>
+					<div class="link-site">
+						<a href="#">Sign Up</a>
+					</div>
+					<br>
+					<div class="social-button">
+						<a href=""><i class="fa fa-facebook"></i></a>
+						<a href=""><i class="fa fa-instagram"></i></a>
+						<a href=""><i class="fa fa-pinterest"></i></a>
+						<a href=""><i class="fa fa-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="modal-close"></div>
+		</div>
+	</header>
+	<!-- /header -->
+	<main id="product-detail">
+		<div class="container">
+			<div class="name-product">
+				<a href="#" class="prev"><i class="fa fa-angle-left" style="margin-right: 10px;"></i> Preview</a>
+				<div class="product-detail-name">
+					<h4>Fashion Product Name</h4>
+					<p>Women/Dress</p>
+				</div>
+				<a href="#" class="next">Next<i class="fa fa-angle-right" style="margin-left: 10px;"></i></a>
+			</div><!-- end name product-detail -->
+
+			<div class="details">
+				<div class="img-comments">
+					<div class="slide-img">
+						<div class="product-img">
+							<img src="images/default.png" alt="" width="100%" height="100%">
+							<a href="#" title=""><i class="fa fa-heart"></i></a>
+						</div>
+						<div class="child-img">
+							<div><img src="images/default.png" alt=""></div>
+							<div><img src="images/default.png" alt=""></div>
+							<div><img src="images/default.png" alt=""></div>
+
+						</div>
+					</div>
+					<div class="comment-product">
+						<h5>24 Comment</h5>
+						<hr>
+
+						<form action="#" method="get" accept-charset="utf-8">
+							<p>Comment</p>
+							<textarea name="comment"></textarea>
+							<div class="rating-submit">
+								<div class="rating">
+									Your Ratting
+									<i class="fa fa-star-o"></i>
+									<i class="fa fa-star-o"></i>
+									<i class="fa fa-star-o"></i>
+									<i class="fa fa-star-o"></i>
+									<i class="fa fa-star-o"></i>
+								</div>
+								<button class="submit">Post Comment</button>
+							</div>
+						</form>
+
+						<!-- show comment -->
+						<div class="user-comment">
+							<div class="comment-item">
+								<div class="avatar-user">
+									<img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+								</div>
+								<div class="content-comment">
+									<div class="user-info">
+										<div class="user-name">
+											<h5>Amanda Charter</h5>
+											<div class="role">purchased</div>
+										</div>
+										<div class="rate-product">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+									</div>
+									<div class="user-comment-content">
+										Lorem ipsum dolor sit amet, tellus enim, varius nec magna lobortis neque, aenean tempor, arcu magnam nisl nulla a, sed nec. Ac elit consequat et integer. Sed in lobortis. Pulvinar nulla viverra orci ullamcorper.
+									</div>
+									<p class="time-commented">
+										1 months ago
+									</p>
+								</div>
+							</div>
+
+							<div class="comment-item">
+								<div class="avatar-user">
+									<img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+								</div>
+								<div class="content-comment">
+									<div class="user-info">
+										<div class="user-name">
+											<h5>Amanda Charter</h5>
+											<div class="role">purchased</div>
+										</div>
+										<div class="rate-product">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+									</div>
+									<div class="user-comment-content">
+										Lorem ipsum dolor sit amet, tellus enim, varius nec magna lobortis neque, aenean tempor, arcu magnam nisl nulla a, sed nec. Ac elit consequat et integer. Sed in lobortis. Pulvinar nulla viverra orci ullamcorper.
+									</div>
+									<p class="time-commented">
+										1 months ago
+									</p>
+								</div>
+							</div>
+
+							<div class="comment-item">
+								<div class="avatar-user">
+									<img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+								</div>
+								<div class="content-comment">
+									<div class="user-info">
+										<div class="user-name">
+											<h5>Amanda Charter</h5>
+											<div class="role">purchased</div>
+										</div>
+										<div class="rate-product">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+									</div>
+									<div class="user-comment-content">
+										Lorem ipsum dolor sit amet, tellus enim, varius nec magna lobortis neque, aenean tempor, arcu magnam nisl nulla a, sed nec. Ac elit consequat et integer. Sed in lobortis. Pulvinar nulla viverra orci ullamcorper.
+									</div>
+									<p class="time-commented">
+										1 months ago
+									</p>
+								</div>
+							</div>
+
+							<div class="comment-item">
+								<div class="avatar-user">
+									<img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+								</div>
+								<div class="content-comment">
+									<div class="user-info">
+										<div class="user-name">
+											<h5>Amanda Charter</h5>
+											<div class="role">purchased</div>
+										</div>
+										<div class="rate-product">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+									</div>
+									<div class="user-comment-content">
+										Lorem ipsum dolor sit amet, tellus enim, varius nec magna lobortis neque, aenean tempor, arcu magnam nisl nulla a, sed nec. Ac elit consequat et integer. Sed in lobortis. Pulvinar nulla viverra orci ullamcorper.
+									</div>
+									<p class="time-commented">
+										1 months ago
+									</p>
+								</div>
+							</div>
+
+
+						</div>
+						<!-- end show comment  -->
+						<div class="paginate">
+							<li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li class="active"><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+
+							<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+						</div>
+					</div>
+				</div>
+				<!-- end left -->
+				<div class="detail-product-show">
+					<div class="option-parameter">
+						<div class="product-price-rate">
+							<div class="price-product">
+								<h5>$500</h5>
+								<div class="sale">30% OFF</div>
+								<p>5 pieces left</p>
+							</div>
+							<div class="product-rate">
+								<i class="fa fa-star-o"></i>
+								<i class="fa fa-star-o"></i>
+								<i class="fa fa-star-o"></i>
+								<i class="fa fa-star-o"></i>
+								<i class="fa fa-star-o"></i>
+							</div>	
+						</div>
+						<div class="text-gray">
+							<p><del>$1000</del></p>
+							<p>7 reviews</p>
+						</div>
+						<hr style="border:1px solid #bdbdbd;" />
+
+						<div class="summary">
+							<h6>Lorem ipsum dolor sit amet, tellus enim, varius nec magna lobortis neque, aenean tempor, arcu magnam nisl nulla .</h6>
+						</div>
+
+						<div class="type-product">
+							<div class="type-item size">
+								<p>size</p>
+								<div class="size-value">
+									<button>S</button>
+									<button>M</button>
+									<button>L</button>
+									<button>XL</button>
+								</div>
+							</div>
+							<div class="type-item color">
+								<p>color</p>
+								<div class="color-value">
+									<label class="customcheckbox">
+										<input type="radio" name="color">
+										<span class="checkmark" style="background-color: #f3dfc8"></span>
+									</label>
+									<label class="customcheckbox">
+										<input type="radio" name="color">
+										<span class="checkmark" style="background-color: #ffab00"></span>
+									</label>
+									<label class="customcheckbox">
+										<input type="radio" name="color">
+										<span class="checkmark" style="background-color: #ed5353"></span>
+									</label>
+								</div>
+							</div>
+							<div class="type-item quantily">
+								<p>quantity</p>
+								<select name="quantity">
+									<option value="5">5 pieces</option>
+									option
+								</select>
+							</div>
+							<div class="type-item shipping">
+								<p>shipping</p>
+								<div class="fee-ship">
+									<p>US &Canada</p>
+									<div class="role">FREE SHIPPING</div>
+									<p></p>
+									<p>$10 Worldwide</p>
+								</div>
+							</div>
+
+							<div id="button-buy">
+								<button type="button" class="buynow">buy now</button>
+								<button type="button" class="addtocart">add to my cart <i class="fa fa-shopping-bag"></i></button>
+							</div>
+							<div class="share-product"> 
+								<p>Share On:</p>
+								<div class="social">
+									<a href=""><i class="fa fa-facebook"></i></a>
+									<a href=""><i class="fa fa-instagram"></i></a>
+									<a href=""><i class="fa fa-pinterest"></i></a>
+									<a href=""><i class="fa fa-twitter"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-description">
+							<h5 class="box-title" >Product Detail</h5>
+							<hr style="border:1px solid #bdbdbd;margin: 10px 0" />
+							<p>
+								Lorem ipsum dolor sit amet, tellus enim, varius nec magna lobortis neque, aenean tempor, arcu magnam nisl nulla a, sed nec. Ac elit consequat et integer. Sed in lobortis. Pulvinar nulla viverra orci ullamcorper faucibus fermentum,
+							</p>
+							<p>
+								Tincidunt vitae eget, vivamus velit viverra. Magnis scelerisque posuere hymenaeos quis ut non. llamcorper faucibus fermentum, tincidunt vitae eget, vivamus velit viverra. Magnis scelerisque posuere hymenaeos quis ut non. 
+							</p>
+						</div>
+						<div class="size-description">
+							<h5 class="box-title">Size</h5>
+							<hr style="border:1px solid #bdbdbd;margin: 10px 0" />
+							<table class="size-table">
+								<tbody>
+									<tr>
+										<td> </td>
+										<td>Shoulder</td>
+										<td>Armhome</td>
+										<td>Sleeve</td>
+										<td>Cuff</td>
+										<td>Bust</td>
+										<td>Lengh</td>
+									</tr>
+									<tr bgcolor="#FF0000">
+										<td>S	( Small )</td>
+										<td>24</td>
+										<td>24</td>
+										<td>24</td>
+										<td>24</td>
+										<td>24</td>
+										<td>24</td>
+									</tr>
+									<tr>
+										<td>M 	( Medium )</td>
+										<td>24</td>
+										<td>24</td>
+										<td>24</td>
+										<td>24</td>
+										<td>24</td>
+										<td>24</td>
+									</tr>
+									<tr>
+										<td>L 	( Large )</td>
+										<td>24</td>
+										<td>24</td>
+										<td>24</td>
+										<td>24</td>
+										<td>24</td>
+										<td>24</td>
+									</tr>
+									<tr>
+										<td>XL	( Extra Large )</td>
+										<td>24</td>
+										<td>24</td>
+										<td>24</td>
+										<td>24</td>
+										<td>24</td>
+										<td>24</td>
+									</tr>
+								</tbody>
+							</table>
+						</div><!-- end table -->
+						<div class="faq-description">
+							<h5 class="box-title">FAG</h5>
+							<hr style="border:1px solid #bdbdbd;margin: 10px 0" />
+							<p> 
+								<b>Lorem ipsum dolor sit amet, tellus enim, varius nec magna?</b><br/>
+								lobortis neque, aenean tempor, arcu magnam nisl nulla a, sed nec. Ac elit consequat et integer. Sed in lobortis. Pulvinar nulla viverra orci ullamcorper faucibus fermentum,
+							</p>
+							<p> 
+								<b>Tincidunt vitae eget, vivamus velit viverra?</b><br/>
+								Magnis scelerisque posuere hymenaeos quis ut non. 
+							</p>
+						</div><!-- end faq-description -->
+
+						<div class="suggested-product">
+							<h5 class="box-title">You May Also Like</h5>
+							<hr style="border:1px solid #bdbdbd;margin: 10px 0" />
+							<div class="product-item">
+								<div class="item">
+									<a href="#" title="">
+										<div class="product-img">
+											<img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" />
+											<div class="bt-buy">
+												<div class="price">$100</div>
+												<div class="buy">Shop Now</div>
+											</div>
+										</div>
+										<div class="product-title">
+											<h4><a href="">Product Name</a></h4>
+											<p>top</p>
+										</div>
+									</a>
+								</div> 
+								<div class="item">
+									<a href="#" title="">
+										<div class="product-img">
+											<img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" />
+											<div class="bt-buy">
+												<div class="price">$100</div>
+												<div class="buy">Shop Now</div>
+											</div>
+										</div>
+										<div class="product-title">
+											<h4><a href="">Product Name</a></h4>
+											<p>top</p>
+										</div>
+									</a>
+								</div> 
+								<div class="item">
+									<a href="#" title="">
+										<div class="product-img">
+											<img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" />
+											<div class="bt-buy">
+												<div class="price">$100</div>
+												<div class="buy">Shop Now</div>
+											</div>
+										</div>
+										<div class="product-title">
+											<h4><a href="">Product Name</a></h4>
+											<p>top</p>
+										</div>
+									</a>
+								</div> 
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<footer>
+		<div class="container">
+			<div>
+				<a href="#">About</a>
+				<a href="#">Contact Us</a>
+			</div>
+			<div>© 2016 Graphicstall. Trademarks and brands are the property of their respective owners.</div>
+		</div>
+	</footer>
+</body>
+</html>

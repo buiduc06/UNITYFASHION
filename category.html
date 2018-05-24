@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>category</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/customcheckbox.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<header id="pc">
+		<div class="container">
+			<div class="top-menu">
+				<div>
+					<a href="#login"><i class="fa fa-user-circle" style="margin-right: 10px;"></i>Login</a>|
+					<a href="#login">Sign Up</a>
+				</div>
+				<div class="site-logo">
+					<h1>UNITY</h1>
+					<p>FASHION</p>
+				</div>
+				<div class="button-cart">
+					<a href="#">
+						<div class="heart"> 
+							<p>300</p>
+						</div>
+					</a>
+					<a href="#">
+						<div class="cart"> 
+							<p>300</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="main-menu">
+			<div class="container">
+				<div><a href="#" title=""><i class="fa fa-search"></i></a></div>
+				<div>
+					<ul>
+						<li><a href="#men">men</a></li>
+						<li class="active"><a href="#women">women</a></li>
+						<li><a href="#bridal">bridal</a></li>
+						<li><a href="#Baby&Kids">Baby&Kids</a></li>
+					</ul>
+				</div>
+				<div class="social-button">
+					<a href=""><i class="fa fa-facebook"></i></a>
+					<a href=""><i class="fa fa-instagram"></i></a>
+					<a href=""><i class="fa fa-pinterest"></i></a>
+					<a href=""><i class="fa fa-twitter"></i></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<header id="mobile">
+		<div class="container">
+			<div class="top-menu">
+				<div class="site-logo">
+					<h1>UNITY</h1>
+					<p>FASHION</p>
+				</div>
+				<div class="button-cart">
+					<div class="button-cart">
+						<a href="#">
+							<div class="heart"> 
+								<p>300</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="cart"> 
+								<p>300</p>
+							</div>
+						</a>
+					</div>
+					<a href="#" title="">
+						<div class="button-togge">
+							<button class="fa fa-reorder show-menu"></button>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="modal-show" style="display: none;">
+			<div class="modal-content">
+				<div class="modal-search">
+					<input type="text" name="s" placeholder=" Search....">
+					<button class="fa fa-search"></button>
+				</div>
+				<div class="modal-category">
+					<div class="title-cate non-active">
+						<div>Category</div>
+						<div><i class="fa fa-plus"></i></div>
+					</div>
+					<div class="child-cate">
+						<a href="#"><li>men </li></a>
+						<a href="#"><li>women</li></a>
+						<a href="#"><li>bridal</li></a>
+						<a href="#"><li>Baby&Kids</li></a>
+
+					</div>
+					<div class="link-site">
+						<a href="#">Login</a>
+					</div>
+					<div class="link-site">
+						<a href="#">Sign Up</a>
+					</div>
+					<br>
+					<div class="social-button">
+						<a href=""><i class="fa fa-facebook"></i></a>
+						<a href=""><i class="fa fa-instagram"></i></a>
+						<a href=""><i class="fa fa-pinterest"></i></a>
+						<a href=""><i class="fa fa-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="modal-close"></div>
+		</div>
+	</header>
+	<!-- /header -->
+	<main id="category">
+		<div class="cate-silde">
+			<div class="container">
+				<div class="description-slide">
+					<div class="link">
+						<a href="#" title="home">Home</a> / 
+						<a href="#" title="women">Women</a>
+					</div>
+					<h2>Women</h2>
+					<p>Lorem ipsum dolor sit amet, tellus enim.
+					varius nec magna lobortis neque.</p>
+				</div>
+				<div class="slide-img">
+					<img src="images/fashion-woman-model-portrait1.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="category-filter">
+				<div class="sort-by">
+					<h5 class="box-title" style="font-size: 22px">102 Item Found</h5>
+					<button class="fa fa-filter filter hide-filter"></button>
+					<div class="sort-product hide">
+						Sort By : 
+						<select name="sortby">
+							<option value="">Price</option>
+							<option value="">Name A-Z</option>
+							<option value="">Name Z-A</option>
+						</select>
+						<div class="paginate">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li class="active"><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+						</div>
+					</div>
+				</div>
+				<div class="option-filter option-none">
+					<h5 class="box-title">Search option</h5>
+					<form class="filter-search" method="get" action="?">
+						<input type="text" name="s" value="">
+						<button class="fa fa-search"></button>
+					</form>
+					<h5 class="box-title" id="filter-by">Filter By</h5>
+					<div class="filter-box">
+						<div class="filte-box-title">
+							<h6>categories</h6>
+							<i class="fa fa-chevron-left"></i>
+						</div>
+
+						<div class="filter-categories filter-hide filter-none">
+							<div class="cate"><input type="button" name="">Top</div>
+							<div class="cate"><input type="button" name="">bottom</div>
+							<div class="cate"><input type="button" name="">bottom</div>
+							<div class="cate"><input type="button" name="">bottom</div>
+							<div class="cate"><input type="button" name="">bottom</div>
+						</div>
+					</div>
+					<div class="filter-box">
+						<div class="filte-box-title">
+							<h6>Price</h6>
+							<i class="fa fa-chevron-left"></i>
+						</div>
+						<div class="filter-hide filter-none">
+							<div class="filter-price">
+								<input type="number" name="" value="" placeholder="">
+								<input type="number" name="" value="" placeholder="">
+								<p>Min</p>
+								<p>Max</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="filter-box">
+						<div class="filte-box-title">
+							<h6>size</h6>
+							<i class="fa fa-chevron-left"></i>
+						</div>
+						<div class="filter-hide filter-none">
+							<div class="size-value">
+								<button>S</button>
+								<button>M</button>
+								<button>L</button>
+								<button>XL</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="filter-box">
+						<div class="filte-box-title">
+							<h6>brand</h6>
+							<i class="fa fa-chevron-left"></i>
+						</div>
+						<div class="filter-hide filter-none">
+							<div class="brand">
+								Brand empty
+							</div>
+						</div>
+					</div>
+
+					<div class="filter-box">
+						<div class="filte-box-title">
+							<h6>color</h6>
+							<i class="fa fa-chevron-left"></i>
+						</div>
+						<div class="filter-hide filter-none">
+							<div class="color-value">
+								<label class="customcheckbox">
+									<input type="radio" name="color">
+									<span class="checkmark" style="background-color: #f3dfc8"></span>
+								</label>
+								<label class="customcheckbox">
+									<input type="radio" name="color">
+									<span class="checkmark" style="background-color: #ffab00"></span>
+								</label>
+								<label class="customcheckbox">
+									<input type="radio" name="color">
+									<span class="checkmark" style="background-color: #ed5353"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<section class="product">
+					<div class="item-product">
+						<div class="item">
+							<a href="#" title="name product here">
+								<div class="item-img">
+									<div class="hear">
+										<i class="fa fa-heart"></i>
+									</div>
+									<img src="images/default.png" alt="placeholder+image">
+									<div class="button">
+										<div class="item-price">
+											$100
+										</div>
+										<div class="button-buy">
+											<a href="#">shop now</a>
+										</div>
+									</div>
+								</div>
+								<h5><a href="#">Product Name Here</a></h5>
+								<div class="item-rate">
+									<span style="color: #bdbdbd">Top</span>
+									<div class="rate">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- end item -->
+						<div class="item">
+							<a href="#" title="name product here">
+								<div class="item-img">
+									<div class="hear">
+										<i class="fa fa-heart active"></i>
+									</div>
+									<img src="images/default.png" alt="placeholder+image">
+									<div class="button">
+										<div class="item-price">
+											$100
+										</div>
+										<div class="button-buy">
+											<a href="#">shop now</a>
+										</div>
+									</div>
+								</div>
+								<h5><a href="#">Product Name Here</a></h5>
+								<div class="item-rate">
+									<span style="color: #bdbdbd">Top</span>
+									<div class="rate">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- end item -->
+
+						<div class="item">
+							<a href="#" title="name product here">
+								<div class="item-img">
+									<div class="hear">
+										<i class="fa fa-heart"></i>
+									</div>
+									<img src="images/default.png" alt="placeholder+image">
+									<div class="button">
+										<div class="item-price">
+											$100
+										</div>
+										<div class="button-buy">
+											<a href="#">shop now</a>
+										</div>
+									</div>
+								</div>
+								<h5><a href="#">Product Name Here</a></h5>
+								<div class="item-rate">
+									<span style="color: #bdbdbd">Top</span>
+									<div class="rate">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- end item -->
+
+						<div class="item">
+							<a href="#" title="name product here">
+								<div class="item-img">
+									<div class="hear">
+										<i class="fa fa-heart"></i>
+									</div>
+									<img src="images/default.png" alt="placeholder+image">
+									<div class="button">
+										<div class="item-price">
+											$100
+										</div>
+										<div class="button-buy">
+											<a href="#">shop now</a>
+										</div>
+									</div>
+								</div>
+								<h5><a href="#">Product Name Here</a></h5>
+								<div class="item-rate">
+									<span style="color: #bdbdbd">Top</span>
+									<div class="rate">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- end item -->
+						<div class="item">
+							<a href="#" title="name product here">
+								<div class="item-img">
+									<div class="hear">
+										<i class="fa fa-heart"></i>
+									</div>
+									<img src="images/default.png" alt="placeholder+image">
+									<div class="button">
+										<div class="item-price">
+											$100
+										</div>
+										<div class="button-buy">
+											<a href="#">shop now</a>
+										</div>
+									</div>
+								</div>
+								<h5><a href="#">Product Name Here</a></h5>
+								<div class="item-rate">
+									<span style="color: #bdbdbd">Top</span>
+									<div class="rate">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- end item -->
+
+						<div class="item">
+							<a href="#" title="name product here">
+								<div class="item-img">
+									<div class="hear">
+										<i class="fa fa-heart"></i>
+									</div>
+									<img src="images/default.png" alt="placeholder+image">
+									<div class="button">
+										<div class="item-price">
+											$100
+										</div>
+										<div class="button-buy">
+											<a href="#">shop now</a>
+										</div>
+									</div>
+								</div>
+								<h5><a href="#">Product Name Here</a></h5>
+								<div class="item-rate">
+									<span style="color: #bdbdbd">Top</span>
+									<div class="rate">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- end item -->
+
+						<div class="item">
+							<a href="#" title="name product here">
+								<div class="item-img">
+									<div class="hear">
+										<i class="fa fa-heart"></i>
+									</div>
+									<img src="images/default.png" alt="placeholder+image">
+									<div class="button">
+										<div class="item-price">
+											$100
+										</div>
+										<div class="button-buy">
+											<a href="#">shop now</a>
+										</div>
+									</div>
+								</div>
+								<h5><a href="#">Product Name Here</a></h5>
+								<div class="item-rate">
+									<span style="color: #bdbdbd">Top</span>
+									<div class="rate">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- end item -->
+
+						<div class="item">
+							<a href="#" title="name product here">
+								<div class="item-img">
+									<div class="hear">
+										<i class="fa fa-heart"></i>
+									</div>
+									<img src="images/default.png" alt="placeholder+image">
+									<div class="button">
+										<div class="item-price">
+											$100
+										</div>
+										<div class="button-buy">
+											<a href="#">shop now</a>
+										</div>
+									</div>
+								</div>
+								<h5><a href="#">Product Name Here</a></h5>
+								<div class="item-rate">
+									<span style="color: #bdbdbd">Top</span>
+									<div class="rate">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- end item -->
+
+						<div class="item">
+							<a href="#" title="name product here">
+								<div class="item-img">
+									<div class="hear">
+										<i class="fa fa-heart"></i>
+									</div>
+									<img src="images/default.png" alt="placeholder+image">
+									<div class="button">
+										<div class="item-price">
+											$100
+										</div>
+										<div class="button-buy">
+											<a href="#">shop now</a>
+										</div>
+									</div>
+								</div>
+								<h5><a href="#">Product Name Here</a></h5>
+								<div class="item-rate">
+									<span style="color: #bdbdbd">Top</span>
+									<div class="rate">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- end item -->
+
+						<div class="item">
+							<a href="#" title="name product here">
+								<div class="item-img">
+									<div class="hear">
+										<i class="fa fa-heart"></i>
+									</div>
+									<img src="images/default.png" alt="placeholder+image">
+									<div class="button">
+										<div class="item-price">
+											$100
+										</div>
+										<div class="button-buy">
+											<a href="#">shop now</a>
+										</div>
+									</div>
+								</div>
+								<h5><a href="#">Product Name Here</a></h5>
+								<div class="item-rate">
+									<span style="color: #bdbdbd">Top</span>
+									<div class="rate">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- end item -->
+
+						<div class="item">
+							<a href="#" title="name product here">
+								<div class="item-img">
+									<div class="hear">
+										<i class="fa fa-heart"></i>
+									</div>
+									<img src="images/default.png" alt="placeholder+image">
+									<div class="button">
+										<div class="item-price">
+											$100
+										</div>
+										<div class="button-buy">
+											<a href="#">shop now</a>
+										</div>
+									</div>
+								</div>
+								<h5><a href="#">Product Name Here</a></h5>
+								<div class="item-rate">
+									<span style="color: #bdbdbd">Top</span>
+									<div class="rate">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- end item -->
+
+						<div class="item">
+							<a href="#" title="name product here">
+								<div class="item-img">
+									<div class="hear">
+										<i class="fa fa-heart"></i>
+									</div>
+									<img src="images/default.png" alt="placeholder+image">
+									<div class="button">
+										<div class="item-price">
+											$100
+										</div>
+										<div class="button-buy">
+											<a href="#">shop now</a>
+										</div>
+									</div>
+								</div>
+								<h5><a href="#">Product Name Here</a></h5>
+								<div class="item-rate">
+									<span style="color: #bdbdbd">Top</span>
+									<div class="rate">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- end item -->
+
+						<div class="item">
+							<a href="#" title="name product here">
+								<div class="item-img">
+									<div class="hear">
+										<i class="fa fa-heart"></i>
+									</div>
+									<img src="images/default.png" alt="placeholder+image">
+									<div class="button">
+										<div class="item-price">
+											$100
+										</div>
+										<div class="button-buy">
+											<a href="#">shop now</a>
+										</div>
+									</div>
+								</div>
+								<h5><a href="#">Product Name Here</a></h5>
+								<div class="item-rate">
+									<span style="color: #bdbdbd">Top</span>
+									<div class="rate">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- end item -->
+
+						<div class="item">
+							<a href="#" title="name product here">
+								<div class="item-img">
+									<div class="hear">
+										<i class="fa fa-heart"></i>
+									</div>
+									<img src="images/default.png" alt="placeholder+image">
+									<div class="button">
+										<div class="item-price">
+											$100
+										</div>
+										<div class="button-buy">
+											<a href="#">shop now</a>
+										</div>
+									</div>
+								</div>
+								<h5><a href="#">Product Name Here</a></h5>
+								<div class="item-rate">
+									<span style="color: #bdbdbd">Top</span>
+									<div class="rate">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- end item -->
+
+						<div class="item">
+							<a href="#" title="name product here">
+								<div class="item-img">
+									<div class="hear">
+										<i class="fa fa-heart"></i>
+									</div>
+									<img src="images/default.png" alt="placeholder+image">
+									<div class="button">
+										<div class="item-price">
+											$100
+										</div>
+										<div class="button-buy">
+											<a href="#">shop now</a>
+										</div>
+									</div>
+								</div>
+								<h5><a href="#">Product Name Here</a></h5>
+								<div class="item-rate">
+									<span style="color: #bdbdbd">Top</span>
+									<div class="rate">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- end item -->
+
+					</div>
+					<hr/>
+					<div class="category-paginate">
+						<a href="#" class="prev"><i class="fa fa-angle-left" style="margin-right: 10px;"></i> Preview</a>
+						<div class="paginate">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li class="active"><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+						</div>
+						<a href="#" class="next">Next<i class="fa fa-angle-right" style="margin-left: 10px;"></i></a>
+					</div>
+				</section>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<div>
+				<a href="#">About</a>
+				<a href="#">Contact Us</a>
+			</div>
+			<div>© 2016 Graphicstall. Trademarks and brands are the property of their respective owners.</div>
+		</div>
+	</footer>
+</body>
+</html>
